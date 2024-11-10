@@ -41,7 +41,6 @@ window.addEventListener('resize', () => {
     hideBtn.style.display = "none";
     expandBtn.style.display = "none";
   } else if (window.innerWidth >= 768) {
-    expandBtn.style.display = 'block';
-    hideBtn.style.display = "none";
+    btnHide();
   }
 });
