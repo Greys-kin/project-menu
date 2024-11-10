@@ -35,3 +35,13 @@ function btnHide () {
   expandBtn.style.display = 'block';
 }
 
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 768) {
+    btnHide();
+    hideBtn.style.display = "none";
+    expandBtn.style.display = "none";
+  } else if (window.innerWidth >= 768) {
+    expandBtn.style.display = 'block';
+    hideBtn.style.display = "none";
+  }
+});
